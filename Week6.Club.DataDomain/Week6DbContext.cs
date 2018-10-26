@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Week6.Club.DataDomain
 {
-    class Week6DbContext: DbContext
+    public class Week6DbContext: DbContext
     {
         public DbSet<Clubs> Clubs { get; set; }
         public DbSet<Members> ClubMembers { get; set; }

@@ -205,6 +205,10 @@
     <Compile Include="Migrations\Week6MVCMigrations\201810261103369_Initial Migraton.Designer.cs">
       <DependentUpon>201810261103369_Initial Migraton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Week6MVCMigrations\201810261108539_Entity ID field added.cs" />
+    <Compile Include="Migrations\Week6MVCMigrations\201810261108539_Entity ID field added.Designer.cs">
+      <DependentUpon>201810261108539_Entity ID field added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Week6MVCMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -292,6 +296,15 @@
     <EmbeddedResource Include="Migrations\Week6MVCMigrations\201810261103369_Initial Migraton.resx">
       <DependentUpon>201810261103369_Initial Migraton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Week6MVCMigrations\201810261108539_Entity ID field added.resx">
+      <DependentUpon>201810261108539_Entity ID field added.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Week6.Club.DataDomain\Week6.Club.DataDomain.csproj">
+      <Project>{7fb75372-e60d-4e4a-b70a-4e51cff67b76}</Project>
+      <Name>Week6.Club.DataDomain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
