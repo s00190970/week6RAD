@@ -19,7 +19,7 @@ namespace Week6.Club.DataDomain
         public string StudentNumber { get; set; }
         public bool approved { get; set; }
         [ForeignKey("AssociatedClub")]
-        public virtual Club myClub { get; set; }
-        public virtual Student studentMember { get; set; }
+        public virtual Clubs myClub { get; set; }
+        public virtual Students studentMember { get; set; }
     }
 }

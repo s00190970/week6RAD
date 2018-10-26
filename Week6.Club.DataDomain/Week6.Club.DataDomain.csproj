@@ -49,6 +49,11 @@
   <ItemGroup>
     <Compile Include="Clubs.cs" />
     <Compile Include="Members.cs" />
+    <Compile Include="Migrations\Week6DbContextMigrations\201810261102191_Initial Migraton.cs" />
+    <Compile Include="Migrations\Week6DbContextMigrations\201810261102191_Initial Migraton.Designer.cs">
+      <DependentUpon>201810261102191_Initial Migraton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Week6DbContextMigrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Students.cs" />
     <Compile Include="Week6DbContext.cs" />
@@ -56,6 +61,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\Week6DbContextMigrations\201810261102191_Initial Migraton.resx">
+      <DependentUpon>201810261102191_Initial Migraton.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
