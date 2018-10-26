@@ -1,11 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Clubs.Model
+namespace Week6.Club.DataDomain
 {
     [Table("Student")]
-    public class Student
+    public class Students
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

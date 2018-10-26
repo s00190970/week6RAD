@@ -1,5 +1,4 @@
-﻿using Clubs.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClubDomain.Classes.ClubModels
+namespace Week6.Club.DataDomain
 {
     [Table("Member")]
-    public class Member
+    public class Members
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -22,6 +21,5 @@ namespace ClubDomain.Classes.ClubModels
         [ForeignKey("AssociatedClub")]
         public virtual Club myClub { get; set; }
         public virtual Student studentMember { get; set; }
-
     }
 }

@@ -47,10 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Club.cs" />
+    <Compile Include="Clubs.cs" />
     <Compile Include="Members.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Students.cs" />
+    <Compile Include="Week6DbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

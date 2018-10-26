@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClubDomain.Classes.ClubModels
+namespace Week6.Club.DataDomain
 {
     [Table("Club")]
-    public class Club
+    public class Clubs
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -18,7 +18,6 @@ namespace ClubDomain.Classes.ClubModels
         [Column(TypeName = "date")]
         public DateTime CreationDate { get; set; }
         public int adminID { get; set; }
-        public virtual ICollection<Member> clubMembers { get; set; }        
-        
+        public virtual ICollection<Members> clubMembers { get; set; }
     }
 }
